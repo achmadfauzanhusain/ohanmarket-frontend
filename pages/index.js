@@ -1,78 +1,83 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Patrick_Hand } from 'next/font/google'
+import Image from 'next/image';
+import Link from 'next/link';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const patrickHand = Patrick_Hand({
+  subsets: ['latin'],
+  weight: '400', // Patrick Hand cuma punya 1 weight: 400
+  display: 'swap',
+  variable: '--font-patrick-hand', // opsional, kalau mau pakai CSS variable
+})
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the index.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="pb-10 md:pb-14">
+      <div className="mt-12 sm:mt-16 md:mt-24">
+        <h1 className="text-center text-lg sm:text-3xl md:text-4xl font-bold">The First <span className="text-[#FF6500]">Animal Racing</span> Casino <br /> With Crypto Currency</h1>
+        <p className="text-center font-bold text-sm sm:text-lg md:text-xl mt-1 md:mt-2 opacity-50">Fun and Different way to Gambling</p>
+        
+        <div className="relative w-[95%] sm:w-[90%] h-24 lg:w-[80%] mx-auto mt-1">
+          <div className="flex justify-between gap-2 px-4 sm:px-8 md:px-12 text-[10px] md:text-sm font-semibold">
+            {/* text 1 */}
+            <div className="flex items-center bg-white px-2 md:px-5 py-2 md:py-3 text-black rounded-sm translate-y-7">
+              <p>We Gonna Make The Next Great Casino - <br /> fauzanhusain</p>
+            </div>
+
+            {/* text 2 */}
+            <div className="flex items-center bg-white px-2 md:px-5 py-2 md:py-3 text-black rounded-sm">
+              <p>Our Plan is to Combine Traditionalism <br /> With Technology</p>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs/pages/getting-started?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      {/* original */}
+      <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-16 md:mt-18">
+        <h1 className={`${patrickHand.className} text-2xl sm:text-3xl text-center`}>OHAN ORIGINALS</h1>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-4">
+          {[
+            { src: "/originals/snail.jpg", alt: "Snail", href: "/snail" },
+            { src: "/originals/pig.jpg", alt: "Pig", href: "/pig" },
+            { src: "/originals/dog.jpg", alt: "Dog", href: "/dog" },
+            { src: "/originals/goat.jpg", alt: "Goat", href: "/goat" },
+          ].map((item) => (
+            <Link
+              key={item.alt}
+              href={item.href}
+              className="group relative block overflow-hidden rounded-xl"
+            >
+              <Image
+                src={item.src}
+                width={300}
+                height={300}
+                alt={item.alt}
+                className="w-full h-auto rounded-xl transition-transform duration-300 ease-out group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
-      </main>
+        <Link href="/" className="text-center block mt-10 md:mt-14 underline text-base font-bold md:text-xl">Go To Casino</Link>
+      </div>
+
+      {/* footer */}
+      <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-18 md:mt-24">
+          <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzan husain, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
+
+          <div className='mt-6'>
+            <h2 className='font-bold'>Community</h2>
+            <div className='flex gap-4 mt-2'>
+              <Link href="/">
+                <Image className='p-2 bg-white/20 rounded-md' src="/instagram.png" width={40} height={55} />
+              </Link>
+            </div>
+          </div>
+      </div>
     </div>
   );
 }
