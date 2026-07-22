@@ -11,6 +11,7 @@ const patrickHand = Patrick_Hand({
 
 const Casino = () => {
     return (
+        <div className="pb-10 md:pb-14">
         <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-10 md:mt-16">
             <h1 className={`${patrickHand.className} text-2xl sm:text-3xl`}>OHAN ORIGINALS</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-4">
@@ -40,6 +41,21 @@ const Casino = () => {
                 </Link>
             ))}
             </div>
+        </div>
+
+        {/* footer */}
+        <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-24 md:mt-32">
+            <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzan husain, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
+
+            <div className='mt-6'>
+                <h2 className='font-bold'>Community</h2>
+                <div className='flex gap-4 mt-2'>
+                <Link href="https://instagram.com/_fauzanhusain">
+                    <Image className='p-2 bg-white/20 rounded-md' src="/instagram.png" width={40} height={55} />
+                </Link>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }
