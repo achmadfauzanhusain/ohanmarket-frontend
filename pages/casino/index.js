@@ -11,7 +11,7 @@ const patrickHand = Patrick_Hand({
 
 const Casino = () => {
     return (
-        <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-16 md:mt-18">
+        <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-10 md:mt-16">
             <h1 className={`${patrickHand.className} text-2xl sm:text-3xl`}>OHAN ORIGINALS</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-4">
             {[
