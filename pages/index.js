@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="pb-10 md:pb-14">
       <div className="mt-12 sm:mt-16 md:mt-24">
-        <h1 className="text-center text-xl sm:text-3xl md:text-4xl font-bold">The First <span className="text-[#FF6500]">Animal Racing</span> Casino <br /> With Crypto Currency</h1>
-        <p className="text-center font-bold text-sm sm:text-lg md:text-xl mt-1 md:mt-2 opacity-50">Fun and Different way to Gambling</p>
+        <h1 className="text-center text-xl sm:text-3xl md:text-4xl font-bold">The First Crypto <br /><span className="text-[#FF6500]">Animal Racing</span> Platform</h1>
+        <p className="text-center font-bold text-sm sm:text-lg md:text-xl mt-1 md:mt-2 opacity-50">Fun and Unique way to Gamble</p>
         
         <div className="relative w-[95%] sm:w-[90%] h-24 lg:w-[80%] mx-auto mt-1">
           <div className="flex justify-between gap-2 px-4 sm:px-8 md:px-12 text-[10px] md:text-sm font-semibold">
