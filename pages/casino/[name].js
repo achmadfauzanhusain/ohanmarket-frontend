@@ -55,8 +55,8 @@ const Name = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 bg-white/10 rounded-2xl">
-
+                    <div className="col-span-1 flex items-center justify-center bg-white/10 rounded-2xl">
+                        <h2 className="font-bold text-center">Coming Soon ...</h2>
                     </div>
                 </div>
             </div>
