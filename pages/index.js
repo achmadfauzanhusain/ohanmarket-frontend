@@ -37,10 +37,10 @@ export default function Home() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mt-4">
           {[
-            { src: "/originals/snail.jpg", alt: "Snail", href: "/snail" },
-            { src: "/originals/pig.jpg", alt: "Pig", href: "/pig" },
-            { src: "/originals/dog.jpg", alt: "Dog", href: "/dog" },
-            { src: "/originals/goat.jpg", alt: "Goat", href: "/goat" },
+            { src: "/originals/snail.jpg", alt: "Snail", href: "/casino/snail" },
+            { src: "/originals/pig.jpg", alt: "Pig", href: "/casino/pig" },
+            { src: "/originals/dog.jpg", alt: "Dog", href: "/casino/dog" },
+            { src: "/originals/goat.jpg", alt: "Goat", href: "/casino/goat" },
           ].map((item) => (
             <Link
               key={item.alt}
@@ -62,7 +62,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <Link href="/" className="text-center block mt-10 md:mt-14 underline text-base font-bold md:text-xl">Go To Casino</Link>
+        <Link href="/casino" className="text-center block mt-10 md:mt-14 underline text-base font-bold md:text-xl">Go To Casino</Link>
       </div>
 
       {/* footer */}
