@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Startup</title>
+        <title>OHANMARKET</title>
       </Head>
       <main className={`${poppins.className}`}>
         <Navbar />
