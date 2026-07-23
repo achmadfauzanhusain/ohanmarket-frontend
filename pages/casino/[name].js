@@ -9,10 +9,10 @@ const Name = () => {
     return (
         <div className="pb-10 md:pb-14">
             <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-4 md:mt-8">
-                <div className="grid grid-cols-3 gap-8">
-                    <div className="col-span-2">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 md:gap-8">
+                    <div className="sm:col-span-2 w-full">
                         <h1 className="text-lg font-bold uppercase">{name} race</h1>
-                        <div className="text-xs mt-1 flex gap-2">
+                        <div className="text-xs mt-1 grid grid-cols-3 gap-2">
                             <p className="flex items-center gap-1">
                                 <span className="inline-block w-2 h-2 rounded-full bg-pink-400"></span>
                                 {name} <span className="font-bold">20%</span>
@@ -36,6 +36,7 @@ const Name = () => {
                         </div>
                         <hr className="opacity-25 mt-3" />
                         <hr className="opacity-25 mt-1" />
+                        
                         <h2 className="text-sm font-semibold mt-2">Choose Your <span className="capitalize">{name}</span> :</h2>
                         <div className="mt-4 flex flex-col gap-2">
                             <div className="uppercase border border-pink-400 bg-pink-400 text-white px-4 py-2 rounded-sm font-bold">
@@ -55,15 +56,15 @@ const Name = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 flex items-center justify-center bg-white/10 rounded-2xl">
-                        <h2 className="font-bold text-center">Coming Soon ...</h2>
+                    <div className="sm:col-span-1 w-full flex items-center justify-center bg-white/10 rounded-lg py-4 sm:rounded-2xl">
+                        <h2 className="font-bold text-center text-sm md:text-base">Coming Soon ...</h2>
                     </div>
                 </div>
             </div>
 
             {/* footer */}
             <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-18 md:mt-24">
-                <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzan husain, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
+                <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzanchenko, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
 
                 <div className='mt-6'>
                     <h2 className='font-bold'>Community</h2>

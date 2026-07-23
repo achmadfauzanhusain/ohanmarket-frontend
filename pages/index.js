@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex justify-between gap-2 px-4 sm:px-8 md:px-12 text-[10px] md:text-sm font-semibold">
             {/* text 1 */}
             <div className="flex items-center bg-white px-2 md:px-5 py-2 md:py-3 text-black rounded-sm translate-y-7">
-              <p>Were make the next great casino - <br /> fauzanchenko</p>
+              <p>We're make the next great casino - <br /> fauzanchenko</p>
             </div>
 
             {/* text 2 */}
@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* footer */}
       <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-18 md:mt-24">
-          <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzan husain, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
+          <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzanchenko, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
 
           <div className='mt-6'>
             <h2 className='font-bold'>Community</h2>

@@ -45,7 +45,7 @@ const Casino = () => {
 
         {/* footer */}
         <div className="relative w-[95%] sm:w-[90%] lg:w-[80%] mx-auto mt-24 md:mt-32">
-            <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzan husain, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
+            <p className="text-xs opacity-75">ohanmarket.com owned and operated by fauzanchenko, his plan to make high technology combine with <br /> traditionalism and embrace traditionalism. Make traditionalism back again!</p>
 
             <div className='mt-6'>
                 <h2 className='font-bold'>Community</h2>
