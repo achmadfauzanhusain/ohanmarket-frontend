@@ -20,12 +20,12 @@ export default function Home() {
           <div className="flex justify-between gap-2 px-4 sm:px-8 md:px-12 text-[10px] md:text-sm font-semibold">
             {/* text 1 */}
             <div className="flex items-center bg-white px-2 md:px-5 py-2 md:py-3 text-black rounded-sm translate-y-7">
-              <p>We gonna make the next great casino - <br /> fauzanhusain</p>
+              <p>Were make the next great casino - <br /> fauzanchenko</p>
             </div>
 
             {/* text 2 */}
             <div className="flex items-center bg-white px-2 md:px-5 py-2 md:py-3 text-black rounded-sm">
-              <p>Our plan is to combine Traditionalism <br /> with Technology</p>
+              <p>Our plan is to combine tradition <br /> with technology</p>
             </div>
           </div>
         </div>
